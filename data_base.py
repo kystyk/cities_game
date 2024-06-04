@@ -15,7 +15,7 @@ def change_db(func):
 
 @change_db
 def create_db(curs):
-    curs.execute("CREATE TABLE IF NOT EXIST users(chat_id INT PRIMARY KEY, score INT, cities TEXT)")
+    curs.execute("CREATE TABLE IF NOT EXISTS users(chat_id INT PRIMARY KEY, score INT, cities TEXT)")
 
 
 @change_db
