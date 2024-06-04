@@ -45,4 +45,5 @@ def get_data(chat_id, curs):
 
     return curs.fetchone()
 
-# delete(5334622351)
+
+create_db()
